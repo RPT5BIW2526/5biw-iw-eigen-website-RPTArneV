@@ -1,61 +1,113 @@
 body{
-    background-color: rgb(138, 136, 121);
-}
-h1{
-    color: #ffffff;
-    text-align: center;
-    text-decoration-line: underline;
-    text-decoration-color: black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(205, 202, 183);
   }
 nav{
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b19d9d;
+      background-color: rgb(0, 0, 0);   
+      text-decoration: none; 
+      border-radius: 50px;
+    }
+    nav a {
+      text-decoration: none; 
+      color: azure;
+      font-size: 20px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    li{
+      margin: 10px; 
+    }
+    ul{
+      list-style-type: none; 
+      margin: 0; 
+      padding: 0;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      height: 70px; 
+      color: azure;
       }
-      
-      ul li {
-        float: centre;
-      }
-      
-      ul li a {
-        display:;
-        color: white;
-        text-align:left;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      
-      ul li a:hover {
-        background-color: #ac4444;
-      }
-}
-h2{
-    color:black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration-line: underline;
-    text-decoration-color: black;
-}
-td{
-    text-align: left;
-    border: bottom 10px;
-    border-color: black;
-}
-img{
-    height: 400px;
-    width: auto;
-    place-items: center;
-}
-p{
-    color: black;
-    text-align: center;
+    ul li a:hover{
+      color: rgb(70, 58, 58); 
+     }
+    img{
+      border-radius: 20px;
+      width: 50%;
+    }
+    tekstfoto{
+      position: absolute;
+      top: 8px;
+      right: 16px;
+    }
 
 
+.afbeeldingen{
+  display: grid;
+  grid-template-areas:
+  "hotel bar restaurant";
+  
+  
+}
+
+.afbeeldingen .hotel {
+  grid-area: hotel;
+}
+
+.afbeeldingen .bar {
+  grid-area: bar;
+}
+
+.afbeeldingen .restaurant {
+  grid-area: restaurant;
+}
+
+.hotel img,
+.bar img,
+.restaurant img {
+    width: 300px;      /* Kies zelf de gewenste breedte */
+    height: 200px;     /* Kies zelf de gewenste hoogte */
+    object-fit: cover; /* Zorgt dat de afbeelding niet vervormt */
+    display: block;    /* Optioneel: verwijdert ongewenste witruimte */
+    
+}
+.intro{
+  grid-template-areas: 1;
+  text-align: right;
+  font-family:'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+.hoofd{
+  text-align: center;
+  font-size: 50px;
+  text-decoration: wavy;
+  font-family:'Courier New', Courier, monospace ;
+  text-shadow: 40px;
 }
 footer{
-    display: inline;
-
+      list-style-type: none; 
+      margin: 0; 
+      padding: 0;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 70px; 
+      color: azure;
+      margin: 10px;
+      background-color: black;
+      border-radius: 50px;
 }
+.plaats{
+  margin: 10px;
+}
+.groot{
+  font-size: 25px;
+  text-align: left;
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+.uitstap{
+  display: flex;
+}
+
+
+
+
