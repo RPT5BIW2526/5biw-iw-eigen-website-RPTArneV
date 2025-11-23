@@ -8,7 +8,7 @@ nav{
     }
     nav a {
       text-decoration: none; 
-      color: azure;
+      color: white;
       font-size: 20px;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
@@ -23,7 +23,7 @@ nav{
       justify-content: space-between; 
       align-items: center; 
       height: 70px; 
-      color: azure;
+      color: white;
       }
     ul li a:hover{
       color: rgb(70, 58, 58); 
@@ -49,18 +49,43 @@ nav{
 
 .afbeeldingen .hotel {
   grid-area: hotel;
-  background-color: aqua;
-  border-radius: 10px;
+  background-color:#8b8d6c;
+  border-radius: 50px;
+  border-style:solid ;
+  border-color: rgb(205, 202, 183);
+  border-width: 10px;
 }
-
+.container {
+  display: flex;
+  flex-direction: column; /* zet tekst onder de foto */
+  align-items: center;     /* horizontaal centreren */
+  justify-content: center; /* verticaal centreren */
+  height: 500px;           /* voorbeeldhoogte */
+  text-align: center;
+  line-height: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: white;
+}
+ h2{
+  font-family: 'Courier New', Courier, monospace;
+}
 .afbeeldingen .bar {
   grid-area: bar;
-  background-color: antiquewhite;
+  background-color:#565446;
+  border-radius: 50px;
+  border-style:solid ;
+  border-color: rgb(205, 202, 183);
+  border-width: 10px;
 }
 
 .afbeeldingen .restaurant {
   grid-area: restaurant;
-  background-color: black;
+  background-color:#8b8d6c;
+  border-radius: 50px;
+  border-style:solid ;
+  border-color: rgb(205, 202, 183);
+  border-width: 10px;
 }
 
 .hotel img,
@@ -170,7 +195,14 @@ promo{
 .kenmerken a:hover {
   color:rgb(70, 58, 58);
 }
-
+.kerst{
+  align-items: center;
+  text-align: center;
+}
+.kerst h2{
+  text-decoration: underline;
+  font-size: 40px;
+}
 
 
 
