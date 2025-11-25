@@ -24,7 +24,15 @@ nav{
       align-items: center; 
       height: 70px; 
       color: white;
+      margin-left: 2em;
       }
+
+.nav-items{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2em;
+}
+
     ul li a:hover{
       color: rgb(70, 58, 58); 
      }
