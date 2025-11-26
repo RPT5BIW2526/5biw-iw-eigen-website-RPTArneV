@@ -1,18 +1,20 @@
+/*De body krijgt een achtergrondkleur*/
 body{
     background-color: rgb(205, 202, 183);
 
   }
+/*De navigatie krijgt een zwarte achtergrondkleur, de hoeken worden afgerond en er is geen tekst decoratie*/
 nav{
       background-color: rgb(0, 0, 0);   
       text-decoration: none; 
       border-radius: 20px;
-    }
+    } /*De a elementen in de navigatie krijgen als kleur wit, tekst groote 20, geen tekst decoratie en als lettertype Franklin*/
     nav a {
       text-decoration: none; 
       color: white;
       font-size: 20px;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+    } /*De plaats tussen de lijst elementen is 10*/
     li{
       margin: 10px; 
     }
