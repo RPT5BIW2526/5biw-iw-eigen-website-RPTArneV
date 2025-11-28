@@ -3,22 +3,23 @@ body{
     background-color: rgb(205, 202, 183);
 
   }
-/*De navigatie krijgt een zwarte achtergrondkleur, de hoeken worden afgerond en er is geen tekst decoratie*/
+/*De navigatie krijgt een zwarte achtergrondkleur, de hoeken worden afgerond en geen tekst decoratie*/
 nav{
       background-color: rgb(0, 0, 0);   
       text-decoration: none; 
       border-radius: 20px;
-    } /*De a elementen in de navigatie krijgen als kleur wit, tekst groote 20, geen tekst decoratie en als lettertype Franklin*/
+    } /*De a elementen in de navigatie krijgen als kleur wit, tekstgrootte 20, geen tekstdecoratie en lettertype Franklin*/
     nav a {
       text-decoration: none; 
       color: white;
       font-size: 20px;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     } /*De plaats tussen de lijst elementen is 10*/
+    /* De lijstitems van de navigatie krijgen een marge van 10*/
     li{
       margin: 10px; 
     }
-    ul{
+    ul{ /* De unorderd lijst elementen van de navigatiebalk hebben geen lijststijl, er is geen marge/padding, en wordt hozrizontaal gecentreerd*/
       list-style-type: none; 
       margin: 0; 
       padding: 0;
@@ -29,35 +30,34 @@ nav{
       color: white;
       margin-left: 2em;
       }
-
+/* Navigatie-items worden rechts uitgelijnd met ruimte ertussen */
 .nav-items{
   display: flex;
   justify-content: space-between;
   margin-right: 2em;
 }
-
+/* Hover-effect: tekstkleur verandert naar donkergrijs */
     ul li a:hover{
       color: rgb(70, 58, 58); 
      }
+     /* Alle afbeeldingen krijgen afgeronde hoeken en standaard breedte 50% */
     img{
       border-radius: 20px;
       width: 50%;
     }
+    /* Klasse tekstfoto positioneert tekst rechtsboven */
     tekstfoto{
       position: absolute;
       top: 8px;
       right: 16px;
     }
-
-
+    /* Afbeeldingen worden in een grid geplaatst met drie kolommen: hotel, bar, restaurant */
 .afbeeldingen{
   display: grid;
   grid-template-areas:
-  "hotel bar restaurant";
-  
-  
+  "hotel bar restaurant";  
 }
-
+/* Hotel-sectie krijgt achtergrondkleur, afgeronde hoeken en een dikke rand */
 .afbeeldingen .hotel {
   grid-area: hotel;
   background-color:#8b8d6c;
@@ -66,6 +66,7 @@ nav{
   border-color: rgb(205, 202, 183);
   border-width: 10px;
 }
+/* Container centreert inhoud verticaal en horizontaal */
 .container {
   display: flex;
   flex-direction: column; 
@@ -78,13 +79,16 @@ nav{
   font-size: 15px;
   color: white;
 }
+/* h1 links uitgelijnd */
 h1{
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
 }
+/* h2 krijgen hetzelfde lettertype */
  h2{
   font-family: 'Courier New', Courier, monospace;
 }
+/* Bar-sectie met eigen achtergrondkleur en rand */
 .afbeeldingen .bar {
   grid-area: bar;
   background-color:#565446;
@@ -93,7 +97,7 @@ h1{
   border-color: rgb(205, 202, 183);
   border-width: 10px;
 }
-
+/* Restaurant-sectie met achtergrondkleur en rand */
 .afbeeldingen .restaurant {
   grid-area: restaurant;
   background-color:#8b8d6c;
@@ -102,16 +106,16 @@ h1{
   border-color: rgb(205, 202, 183);
   border-width: 10px;
 }
-
+/* De breedte is 300 en hoogte 200, */
 .hotel img,
 .bar img,
 .restaurant img {
-    width: 300px;      /* Kies zelf de gewenste breedte */
-    height: 200px;     /* Kies zelf de gewenste hoogte */
-    object-fit: cover; /* Zorgt dat de afbeelding niet vervormt */
-    display: block;    /* Optioneel: verwijdert ongewenste witruimte */
-    
+    width: 300px;   
+    height: 200px;    
+    object-fit: cover; 
+    display: block;    
 }
+/* Intro-tekst wordt gecentreerd en groot weergegeven */
 .intro{
   font-family:'Courier New', Courier, monospace;
   text-decoration: none;
@@ -122,8 +126,8 @@ h1{
   place-items: center;
   height: 400px;
   font-size: 25px;
-  
 }
+/* Hoofdtitel groot, gecentreerd, onderlijnd en met schaduw */
 .hoofd{
   text-align: center;
   font-size: 50px;
@@ -132,6 +136,7 @@ h1{
   text-shadow: 40px;
   text-decoration: underline;
 }
+/* Footer met zwarte achtergrond, witte tekst en gecentreerde links */
 footer{
       list-style-type: none; 
       margin: 20px; 
@@ -146,22 +151,25 @@ footer{
       gap: 20px; 
       font-family:'Courier New', Courier, monospace;
 }
+/* Links in footer wit en zonder decoratie */
 footer a{
   color: white; 
   text-decoration: none;
 }
+/* Klasse plaats krijgt marge van 10 */
 .plaats{
   margin: 10px;
 }
+/*Elementen met klasse groot krijgen lettergroote 25 en links uitgelijnd*/
 .groot{
   font-size: 25px;
   text-align: left;
 }
-
+/*Elementen met klasse uitstap krijgen het scherm past zich automatisch aan */
 .uitstap{
   display: flex;
 }
-
+/* Tekst met klasse tekst wordt gecentreerd, onderlijnd en groot weergegeven */
 .tekst{
   text-align: center;
   text-decoration: underline;
@@ -170,8 +178,7 @@ footer a{
   font-size: 65px;
   line-height: 10px;
 }
-
-
+/* Tabellen gecentreerd met Courier-lettertype */
 table{
   font-family: 'Courier New', Courier, monospace;
   margin: 0 auto;
@@ -179,10 +186,12 @@ table{
   color: black;
   text-decoration: none;
 }
+/* Klasse drank krijgt zwarte tekst zonder decoratie */
 .drank{
     color: black; 
     text-decoration: none;
 }
+/* Tabellen-cellen zonder randstijl en met lijnhoogte */
 td {
   border: 1px solid black;
   font-family: 'Courier New', Courier, monospace;
@@ -190,32 +199,40 @@ td {
   border-style: none;
   list-style-type: none;
 }
+  td a:hover {
+  text-decoration: underline;
+  }
+/* Onderdeel-titel groot, onderlijnd en gecentreerd */
 .onderdeel{
   font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
   text-decoration: underline;
   text-align: center;
 }
+/* Friet-sectie gecentreerd met minimale lijnhoogte */
 .friet{
   text-align: center;
   justify-items: center;
   line-height: 0px;
 }
+/* Alle h2 in div worden groot, gecentreerd en onderlijnd */
 div h2{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
 }
+/* Promo-element krijgt maximale breedte 40px */
 promo{
   max-width: 40px;
 }
+/* Hero-afbeelding krijgt vaste hoogte en afgeronde hoeken */
 .hero img {
   width: auto;
   height: 400px;
   border-radius: 50px;
 }
-
+/* Alle elementen met de klasse kenmerken, de items worden gecentreerd, en de content ook, scherm aanpassen aan scherm*/
 .kenmerken {
   display: flex;
   justify-content: center;
@@ -224,7 +241,8 @@ promo{
   margin: 50px;
   flex-wrap: wrap;
 }
-
+/*Alle elementen met de klasse kenmerken p  krijgen lettergroote 18,letter kleur wit, achtergrond zwart, tekst wordt gecentreerd.
+de randen worden afgrond met 50, er is geen plaats tussen de elementen, de ruimte tussen de inhoud van een element en de rand */
 .kenmerken p {
   font-size: 18px;
   font-weight: bold;
@@ -236,42 +254,22 @@ promo{
   font-family: 'Courier New', Courier, monospace;
   text-align:center;
 }
-
+/*Alle kenmerken van het element a krijgen een witte kleur en geen tekst decoratie*/
 .kenmerken a {
   color: white;
   text-decoration: none;
 }
-
+/* Als je over kenmerken gaat dan veranderd de kleur naar deze kleur*/
 .kenmerken a:hover {
   color:rgb(70, 58, 58);
 }
+/* Het element met de klasse krest gaat de tekst in het het midden staan en de items ook*/
 .kerst{
   align-items: center;
   text-align: center;
 }
+/* Het elemnt in kerst met h2 wordt onderlijnd en krijgt een grote van 40*/
 .kerst h2{
   text-decoration: underline;
   font-size: 40px;
 }
-.promo-blok {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
-  background-color: #f5f0e6;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
-}
-
-
-
-
-
-
-
